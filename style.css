@@ -4,6 +4,24 @@
     background-repeat: repeat;
     height: 100vh;
 }
+.jumbotron{
+    background-color: transparent !important;
+}
+#nav_bar{
+    background-color: #1f2833;
+}
+
+.nav-section{
+    background-color: #1f2833;
+}
+
+.teal{
+    color: #66fcf1;
+}
+
+#view-work{
+ margin-top:15px;
+}
 
 .greeting {
     text-align: center;
@@ -14,10 +32,24 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
- .contact-section {
+ .about-section {
+    background-color: #e9ecef;
+    padding-bottom: 100px;
+ }
+ .portfolio-section {
+    background-color: whitesmoke;
+    padding-bottom: 100px;
+ }
 
+ .contact-section {
+     background-color: #e9ecef;
  }
 
  .display-4{
      text-align: center;
+ }
+
+ #footer {
+     height: 203px;
+     background-color: rgb(50, 50, 50);
  }
