@@ -43,6 +43,7 @@
 
  .contact-section {
      background-color: #e9ecef;
+     padding-bottom: 60px;
  }
 
  .display-4{
@@ -53,3 +54,23 @@
      height: 203px;
      background-color: rgb(50, 50, 50);
  }
+
+ .progress-bar {
+     background-color: #1f2833;
+     color: #66fcf1;
+ }
+
+ .progress {
+    background-color: rgb(191, 191, 191);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin: 10px;
+  }
+
+  .bg-success {
+    background-color: #57cdc7 !important;
+  }
+
+  .bg-info {
+    color: rgb(79, 79, 79);
+  }
