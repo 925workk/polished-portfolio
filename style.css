@@ -1,0 +1,23 @@
+.initial-background {
+    width: 100%;
+    background-image: url(images/prism.png);
+    background-repeat: repeat;
+    height: 100vh;
+}
+
+.greeting {
+    text-align: center;
+    color: whitesmoke;
+    margin: 0;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+ .contact-section {
+
+ }
+
+ .display-4{
+     text-align: center;
+ }
