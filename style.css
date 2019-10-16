@@ -38,8 +38,7 @@
 .greeting {
     text-align: center;
     color: whitesmoke;
-    margin: 0;
-    position: absolute;
+    position: relative;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -171,4 +170,35 @@ input, select, textarea{
 
 #github{
     margin-left: 25px;
+}
+
+@media only screen and (max-width: 660px) {
+    .greeting h1 {
+        font-size: 30px;
+    }
+    .greeting h2 {
+        font-size: 26px;
+        margin-bottom: 0px;
+    }
+    #view-work{
+        font-size: 14px;
+        margin-top: 12px;
+    }
+}
+
+@media only screen and (max-width: 496px) {
+    .greeting h1 {
+        font-size: 20px;
+    }
+    .greeting h2 {
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+    #view-work{
+        font-size: 10px;
+        margin-top: 10px;
+    }
+    .nav-item{
+        font-size: 13px;
+    }
 }
