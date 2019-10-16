@@ -1,23 +1,32 @@
+$('a[href*="#"]').on('click', function(e) {
+  e.preventDefault()
 
-$(document).ready(function() {
-  $('[data-spy="scroll"]').each(function () {
-    var $spy = $(this).scrollspy('refresh')
-  })
-    //change the integers below to match the height of your upper div, which I called
-    //banner.  Just add a 1 to the last number.  console.log($(window).scrollTop())
-    //to figure out what the scroll position is when exactly you want to fix the nav
-    //bar or div or whatever.  I stuck in the console.log for you.  Just remove when
-    //you know the position.
-    $('[data-spy="scroll"]').on('activate.bs.scrollspy', function () {
-  
-      console.log($(window).scrollTop());
-  
-      if ($(window).scrollTop() > 100) {
-        $('#nav_bar').addClass('navbar-fixed-top');
-      }
-  
-      if ($(window).scrollTop() < 551) {
-        $('#nav_bar').removeClass('navbar-fixed-top');
-      }
-    });
-  });
+  $('html, body').animate(
+    {
+      scrollTop: $($(this).attr('href')).offset().top,
+    },
+    500,
+    'linear'
+  )
+})
+
+$(window).bind('scroll', function () {
+  if ($(window).scrollTop() > 600) {
+      $('.navbar').addClass('fixed-top');
+      $('.nav-section').fadeIn(500);
+  } else {
+      $('.navbar').removeClass('fixed-top');
+  }
+  var scrollPos = $(document).scrollTop();
+    $('#nav_bar a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('nav_bar ul li a').removeClass("active");
+            currLink.addClass("active");
+        }
+        else{
+            currLink.removeClass("active");
+        }
+});
+});

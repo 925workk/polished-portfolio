@@ -4,6 +4,9 @@
     background-repeat: repeat;
     height: 100vh;
 }
+#about{
+    padding-top: 40px;
+}
 .padding-bot {
     padding-bottom: 45px;
 }
@@ -17,10 +20,13 @@
 #nav_bar{
     background-color: #1f2833;
 }
-
+.navbar{
+    border-bottom: solid #57cdc7 4px;
+    height: 30px;
+    margin-bottom:-30px;
+}
 .nav-section{
     background-color: #1f2833;
-    border-bottom: solid #66fcf1 4px;
 }
 .center {
     margin: auto;
@@ -30,7 +36,11 @@
 .teal{
     color: #66fcf1;
 }
-
+.build{
+    text-decoration: none !important;
+    text-decoration: underline !important;
+    color: #046d68;
+}
 #view-work{
  margin-top:15px;
 }
@@ -157,8 +167,15 @@ input, select, textarea{
     color: black;
     border: none;
     font-weight: bold;
-    border-radius:3 !important;
-    padding: 10px
+    text-decoration: none;
+}
+#backtotop:hover{
+    background-color: aliceblue;
+}
+
+#topbutton{
+    text-decoration: none;
+    color: #1a1a1a;
 }
 
 .socials{

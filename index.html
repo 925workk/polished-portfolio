@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css" type="text/css">
     <title>Alexander Pham Full-stack Dev</title>
@@ -16,27 +16,25 @@
 
 <body>
     <!-- HOME PAGE -->
-    <div class="initial-background">
+    <div class="initial-background" id="top">
         <div class="greeting">
             <h1>Hello! My name is <span class="teal">Alexander Pham</span>.</h1>
             <h2>A full-stack developer at your service.</h2>
-            <button type="button" id="view-work" class="btn btn-outline-light">View my work</button>
+            <a href="#about"><button type="button" id="view-work" class="btn btn-outline-light">View my work</button></a>
         </div>
     </div>
     <!-- STICKY NAV BAR -->
     <div class="nav-section">
-        <div class="container">
             <nav class="navbar navbar-dark justify-content-between flex-nowrap flex-row" id="nav_bar">
                 <ul class="nav navbar-nav flex-row float-right">
-                    <li class="nav-item mr-5"><a class="nav-link active" href="index.html">ABOUT</a></li>
-                    <li class="nav-item mr-5"><a class="nav-link" href="portfolio.html">PORTFOLIO</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+                    <li class="nav-item mr-5 ml-4"><a class="nav-link" href="#about">ABOUT</a></li>
+                    <li class="nav-item mr-5"><a class="nav-link" href="#portfolio">PORTFOLIO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
-        </div>
     </div>
     <!-- ABOUT SECTION-->
-    <div class="about-section">
+    <div class="about-section" id="about">
         <div class="container">
             <h1 class="display-4">ABOUT</h1>
         </div>
@@ -83,7 +81,7 @@
                         <h3>Custom</h3>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 center">
-                        <p>All projects are built custom, with care, from scratch</p>
+                        <p>All projects are built custom, with care, from scratch.</p>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 padding-bot">
@@ -96,7 +94,7 @@
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 center">
                         <p>A full-stack developer who learned web development through the University of Utah. I have a
                             passion for learning and building new projects that are creative, intuitive, and
-                            asthetically pleasing.<br><a href="#">Let's build something together.</a></p>
+                            aesthetically pleasing.<br><a class="build" href="#">Let's build something together.</a></p>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 center padding-bot">
@@ -134,7 +132,7 @@
         </div>
     </div>
     <!-- PORTFOLIO SECTION-->
-    <div class="portfolio-section">
+    <div class="portfolio-section" id="portfolio">
         <div class="container padding-top">
             <h1 class="display-4">PORTFOLIO</h1>
         </div>
@@ -158,7 +156,7 @@
                             class="card-body text-decoration-none text-secondary">
                             <h5 class="card-title mr">Spongebob Word Guess Game!</h5>
                             <img src="images/sponge.png" width="175px" height="175px" class="float-left mr-3">
-                            <p class="card-text">Test your Spongebob knowledge here! This game was built using basic
+                            <p class="card-text">Test your Spongebob knowledge here! This game was built using
                                 html, css, and javascript.</p>
                         </a>
                     </div>
@@ -181,7 +179,7 @@
                             class="card-body text-decoration-none text-secondary">
                             <h5 class="card-title">WoW Gem Collector Game</h5>
                             <img src="images/wow.jpg" width="150px" height="150px" class="float-left mr-3">
-                            <p class="card-text">This game was made using Jquery. Here you will try to reach the score
+                            <p class="card-text">This game was made using Jquery. Here you'll try to reach the score
                                 presented to you on screen.</p>
                         </a>
                     </div>
@@ -192,7 +190,7 @@
     </div>
     <!-- CONTACT SECTION-->
     <div class="contact-section">
-        <div class="container padding-top">
+        <div class="container padding-top" id="contact">
             <h1 class="display-4 contact">CONTACT</h1>
             <h6 class="center">Have any questions or want to collaborate?</h6>
         </div>
@@ -221,11 +219,11 @@
     <!-- FOOTER/BACK TO TOP SECTION-->
     <footer id="footer">
         <div class="container">
-            <button type="button" id="backtotop" class="btn btn-outline-light">&nbsp&lt&nbsp&lt&nbsp&nbsp</button>
+            <a href="#top" id="topbutton"><button type="button" id="backtotop" class="btn btn-outline-light">&nbsp&lt&nbsp&lt&nbsp&nbsp</button></a></button>
             <div class="row socials">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 center">
-                <a href="#" target="_blank"><img src="images/linkedin.png" width="60px" height="60px" id="linkedin"></a>
-                <a href="#" target="_blank"><img src="images/github.png" width="60px" height="60px" id="github"></a>
+                <a href="https://www.linkedin.com/in/alexander-pham-972414189/" target="_blank"><img src="images/linkedin.png" width="60px" height="60px" id="linkedin"></a>
+                <a href="https://github.com/925work" target="_blank"><img src="images/github.png" width="60px" height="60px" id="github"></a>
             </div>
 
             <div class="copyright col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 center">
@@ -237,15 +235,14 @@
     </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
