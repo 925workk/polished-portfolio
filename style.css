@@ -4,6 +4,13 @@
     background-repeat: repeat;
     height: 100vh;
 }
+.padding-bot {
+    padding-bottom: 60px;
+}
+.padding-top {
+    padding-top: 35px;
+}
+
 .jumbotron{
     background-color: transparent !important;
 }
@@ -13,8 +20,12 @@
 
 .nav-section{
     background-color: #1f2833;
+    border-bottom: solid #66fcf1 4px;
 }
-
+.center {
+    margin: auto;
+    text-align: center;
+  }
 .teal{
     color: #66fcf1;
 }
@@ -34,7 +45,7 @@
 }
  .about-section {
     background-color: #e9ecef;
-    padding-bottom: 100px;
+    padding-bottom: 40px;
  }
  .portfolio-section {
     background-color: whitesmoke;
@@ -42,17 +53,20 @@
  }
 
  .contact-section {
-     background-color: #e9ecef;
+     background-color: #24252d;
      padding-bottom: 60px;
  }
 
  .display-4{
      text-align: center;
+     font-weight: bold;
+     font-size: 35px;
+     padding: 38px;
  }
 
  #footer {
      height: 203px;
-     background-color: rgb(50, 50, 50);
+     background-color: #1f2833;
  }
 
  .progress-bar {
@@ -74,3 +88,22 @@
   .bg-info {
     color: rgb(79, 79, 79);
   }
+body{
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.card-body {
+    text-decoration: none !important;
+}
+.contact{
+    color: whitesmoke;
+}
+.card-body:hover{
+    border: 2px solid #57cdc7;
+    font-weight: bold;
+}
+
+h6{
+    color: #66fcf1;
+    padding-bottom: 40px;
+}
