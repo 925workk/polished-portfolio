@@ -1,8 +1,8 @@
-$('[data-spy="scroll"]').each(function () {
-  var $spy = $(this).scrollspy('refresh')
-})
 
 $(document).ready(function() {
+  $('[data-spy="scroll"]').each(function () {
+    var $spy = $(this).scrollspy('refresh')
+  })
     //change the integers below to match the height of your upper div, which I called
     //banner.  Just add a 1 to the last number.  console.log($(window).scrollTop())
     //to figure out what the scroll position is when exactly you want to fix the nav

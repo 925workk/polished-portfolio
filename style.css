@@ -5,7 +5,7 @@
     height: 100vh;
 }
 .padding-bot {
-    padding-bottom: 60px;
+    padding-bottom: 45px;
 }
 .padding-top {
     padding-top: 35px;
@@ -53,7 +53,7 @@
  }
 
  .contact-section {
-     background-color: #24252d;
+     background-color: #1a1a1a;
      padding-bottom: 60px;
  }
 
@@ -94,6 +94,7 @@ body{
 
 .card-body {
     text-decoration: none !important;
+    border: 1px solid #57cdc7;
 }
 .contact{
     color: whitesmoke;
@@ -106,4 +107,42 @@ body{
 h6{
     color: #66fcf1;
     padding-bottom: 40px;
+}
+
+small{
+    color:rgb(140, 140, 140);
+}
+
+.copyright{
+    display: table;
+    margin: 0 auto;
+    position: relative;
+    top: 177px;
+}
+.dark-teal{
+    color: #57cdc7;
+}
+
+.big{
+    font-size: 21px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+
+.form-control{
+    background-color: #1f2833;
+    color: whitesmoke !important;
+}
+.form-group{
+    color: blueviolet;
+}
+input, select, textarea{
+    background-color: #1f2833 !important;
+    color: whitesmoke !important;
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+.btn {
+    border-radius: 0 !important;
 }
