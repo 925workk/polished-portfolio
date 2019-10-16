@@ -25,6 +25,7 @@
 .center {
     margin: auto;
     text-align: center;
+    align-content: center;
   }
 .teal{
     color: #66fcf1;
@@ -117,7 +118,7 @@ small{
     display: table;
     margin: 0 auto;
     position: relative;
-    top: 177px;
+    top: 35px;
 }
 .dark-teal{
     color: #57cdc7;
@@ -145,4 +146,29 @@ input, select, textarea{
 
 .btn {
     border-radius: 0 !important;
+}
+
+#backtotop{
+    display: table;
+    margin: 0 auto;
+    position: relative;
+    top: -22px;
+    transform: rotate(90deg);
+    background-color: #57cdc7 !important;
+    color: black;
+    border: none;
+    font-weight: bold;
+    border-radius:3 !important;
+    padding: 10px
+}
+
+.socials{
+    display: table;
+    margin: 0 auto;
+    position: relative;
+    top: 30px;
+}
+
+#github{
+    margin-left: 25px;
 }
