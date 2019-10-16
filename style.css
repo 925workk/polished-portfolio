@@ -189,6 +189,27 @@ input, select, textarea{
     margin-left: 25px;
 }
 
+.fixed-top {
+    z-index: 1030;
+    animation-name: slide;
+    animation-duration: 0.8s;
+    animation-timing-function: ease;
+    animation-iteration-count: initial;
+    animation-fill-mode: forwards;
+    transform: translate(0, -20px)
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translate(0, -20px);
+      opacity:.1
+    }
+    100% {
+      transform: translate(0, 0);
+      opacity:1
+    }
+  }
+
 @media only screen and (max-width: 660px) {
     .greeting h1 {
         font-size: 30px;
