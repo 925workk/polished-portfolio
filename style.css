@@ -189,6 +189,11 @@ input, select, textarea{
     margin-left: 25px;
 }
 
+.techsUsed{
+    position: relative;
+    top:33px;
+}
+
 .fixed-top {
     z-index: 1030;
     animation-name: slide;
