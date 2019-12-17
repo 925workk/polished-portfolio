@@ -182,7 +182,7 @@ input, select, textarea{
 }
 .emailAddress:hover{
     text-decoration: none !important;
-    color: whitesmoke;
+    color: #66fcf1;
     text-decoration: underline !important;
 }
 
@@ -229,6 +229,15 @@ input, select, textarea{
     font-weight: bold;
 }
 
+.resume{
+    text-decoration: none; 
+    color:whitesmoke;
+}
+
+.resume:hover{
+    color: #66fcf1;
+    text-decoration: none;
+}
 .questions{
     position: relative;
     top:25px;
