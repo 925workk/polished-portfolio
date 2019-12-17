@@ -108,6 +108,8 @@ body{
 }
 .contact{
     color: whitesmoke;
+    margin-bottom: 0px;
+    padding-top:75px;
 }
 .card-body:hover{
     border: 2px solid #57cdc7;
@@ -173,6 +175,17 @@ input, select, textarea{
     background-color: aliceblue;
 }
 
+.emailAddress{
+    text-decoration: none !important;
+    color: whitesmoke;
+    text-decoration: underline !important;
+}
+.emailAddress:hover{
+    text-decoration: none !important;
+    color: whitesmoke;
+    text-decoration: underline !important;
+}
+
 #topbutton{
     text-decoration: none;
     color: #1a1a1a;
@@ -203,6 +216,23 @@ input, select, textarea{
     animation-fill-mode: forwards;
     transform: translate(0, -20px)
   }
+.rightContactMe {
+    color: whitesmoke;
+    padding: -30px;
+    margin-top: 70px;
+    padding-left: 35px;
+    line-break: loose;
+}
+
+.rightContactMe p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.questions{
+    position: relative;
+    top:25px;
+}
   
   @keyframes slide {
     0% {
@@ -215,7 +245,7 @@ input, select, textarea{
     }
   }
 
-@media only screen and (max-width: 660px) {
+@media only screen and (max-width: 768px) {
     .greeting h1 {
         font-size: 30px;
     }
@@ -226,6 +256,11 @@ input, select, textarea{
     #view-work{
         font-size: 14px;
         margin-top: 12px;
+    }
+    .rightContactMe {
+        text-align: center;
+        padding-left: 0;
+        margin-bottom: 55px;
     }
 }
 
@@ -243,5 +278,10 @@ input, select, textarea{
     }
     .nav-item{
         font-size: 13px;
+    }
+    .rightContactMe {
+        color: whitesmoke;
+        padding: -30px;;
+        margin-top: 70px;
     }
 }
