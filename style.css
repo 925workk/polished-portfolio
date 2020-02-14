@@ -111,10 +111,6 @@ body{
     margin-bottom: 0px;
     padding-top:75px;
 }
-.card-body:hover{
-    border: 2px solid #57cdc7;
-    font-weight: bold;
-}
 
 h6{
     color: #66fcf1;
@@ -202,11 +198,6 @@ input, select, textarea{
     margin-left: 25px;
 }
 
-.techsUsed{
-    position: relative;
-    top:25px;
-}
-
 .fixed-top {
     z-index: 1030;
     animation-name: slide;
@@ -242,7 +233,10 @@ input, select, textarea{
     position: relative;
     top:25px;
 }
-  
+.projecttitle{
+    font-size: 30px;
+    font-weight: bold;
+}
   @keyframes slide {
     0% {
       transform: translate(0, -20px);
@@ -253,6 +247,12 @@ input, select, textarea{
       opacity:1
     }
   }
+
+@media (max-width: 1199px) {
+    .card-text{
+        text-align: center;
+    }
+}
 
 @media only screen and (max-width: 768px) {
     .greeting h1 {
