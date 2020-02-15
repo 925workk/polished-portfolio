@@ -59,7 +59,7 @@
  }
  .portfolio-section {
     background-color: whitesmoke;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
  }
 
  .contact-section {
@@ -73,6 +73,13 @@
      font-size: 35px;
      padding: 38px;
  }
+
+ .display-5{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 5px;
+}
 
  #footer {
      height: 203px;
@@ -237,6 +244,11 @@ input, select, textarea{
     font-size: 30px;
     font-weight: bold;
 }
+.smallTechsUsed{
+    position: relative;
+    bottom: 8px;
+}
+
   @keyframes slide {
     0% {
       transform: translate(0, -20px);
@@ -249,7 +261,7 @@ input, select, textarea{
   }
 
 @media (max-width: 1199px) {
-    .card-text{
+    .project-text{
         text-align: center;
     }
 }
