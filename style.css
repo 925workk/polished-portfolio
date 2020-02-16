@@ -264,6 +264,9 @@ input, select, textarea{
     .project-text{
         text-align: center;
     }
+    .projecttitle{
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 768px) {
