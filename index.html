@@ -9,10 +9,34 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('Gyh-F5pACtKeUoWsC');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                // this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_ka3u0ym', 'contact_form', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                        document.getElementById("contact-form").reset(); 
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css" type="text/css">
-    <title>Alexander Pham | Front-End Dev</title>
+    <title>Alexander Pham | Solidity Dev</title>
 </head>
 
 <body>
@@ -20,7 +44,7 @@
     <div class="initial-background" id="top">
         <div class="greeting">
             <h1>Hello! My name is <span class="teal">Alexander Pham</span>.</h1>
-            <h2>Front-end developer at your service.</h2>
+            <h2>Solidity developer at your service.</h2>
             <a href="#about"><button type="button" id="view-work" class="btn btn-outline-light"><i class="fa fa-eye" aria-hidden="true"></i> View my
                     work</button></a>
         </div>
@@ -94,21 +118,19 @@
                         <h3>Who am I?</h3>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 center">
-                        <p>A front-end developer who learned web development through the University of Utah. I have a
-                            passion for learning and building new projects that are creative, intuitive, and
-                            aesthetically pleasing.<br><a class="build" href="#contact">Let's build something
-                                together.</a></p>
+                        <p>A Determined developer with great leadership skills aiming to create user friendly DApps while expanding my knowledge on various technologies. Excited to implement newfound technologies in a professional environment with a highly-motivated team.
+                            <br><a class="build" href="https://fragmints.io/" target="_blank">CEO and Founder of Fragmints</a></p>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 center padding-bot">
                     <h1>Proficiencies</h1>
                     <div class="progress" style="height: 32px;">
                         <div class="progress-bar big" role="progressbar" style="width: 100%" aria-valuenow="15"
-                            aria-valuemin="0" aria-valuemax="100">HTML</div>
+                            aria-valuemin="0" aria-valuemax="100">HTML/CSS</div>
                     </div>
                     <div class="progress" style="height: 32px;">
                         <div class="progress-bar big" role="progressbar" style="width: 100%" aria-valuenow="15"
-                            aria-valuemin="0" aria-valuemax="100">CSS</div>
+                            aria-valuemin="0" aria-valuemax="100">Solidity/Remix IDE</div>
                     </div>
                     <div class="progress" style="height: 32px;">
                         <div class="progress-bar big" role="progressbar" style="width: 100%" aria-valuenow="15"
@@ -120,11 +142,11 @@
                     </div>
                     <div class="progress" style="height: 32px;">
                         <div class="progress-bar big" role="progressbar" style="width: 100%" aria-valuenow="15"
-                            aria-valuemin="0" aria-valuemax="100">Node.JS/Express.JS</div>
+                            aria-valuemin="0" aria-valuemax="100">Node.JS</div>
                     </div>
                     <div class="progress" style="height: 32px;">
                         <div class="progress-bar big" role="progressbar" style="width: 100%" aria-valuenow="15"
-                            aria-valuemin="0" aria-valuemax="100">Vue.JS</div>
+                            aria-valuemin="0" aria-valuemax="100">Visual Studio Code</div>
                     </div>
                     <div class="progress" style="height: 32px;">
                         <div class="progress-bar big" role="progressbar" style="width: 100%" aria-valuenow="15"
@@ -132,7 +154,7 @@
                     </div>
                     <div class="progress" style="height: 32px;">
                         <div class="progress-bar big" role="progressbar" style="width: 100%" aria-valuenow="15"
-                            aria-valuemin="0" aria-valuemax="100">Firebase/Firestore</div>
+                            aria-valuemin="0" aria-valuemax="100">Amazon Web Servies/IPFS</div>
                     </div>
                     <div class="progress" style="height: 32px;">
                         <div class="progress-bar big" role="progressbar" style="width: 100%" aria-valuenow="15"
@@ -154,39 +176,37 @@
                         <div class="card-body text-decoration-none text-secondary">
                             <div class="row">
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 text-center">
-                                    <img src="images/todoviews.png" width="316" height="180"
+                                    <img src="images/ethereal.png" width="316" height="180"
                                         class="mr-2 mb-1 mx-auto project-images">
                                 </div>
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-8 card-text">
-                                    <h5 class="projecttitle">Alex's EPIC To-do App</h5>
+                                    <h5 class="projecttitle">Ethereal Art NFT</h5>
                                     <hr /> 
-                                    <p class="card-text project-text">Project uses Firestore for user authentication and backend to perform CRUD actions, Vue.JS and bootstrap for the front-end, and Surge for a live hosted domain. A user can register/login and create their own unique to-do lists. Users can also mark tasks completed, edit existing to-dos, filter items, delete items, and log out. 
+                                    <p class="card-text project-text">Developer and team lead of this project. By combining our technical and marketing skills with Instagram artist
+                                        Asia Ladowska, a beautiful and empowering collection was created. Using the Merkle tree, a presale with over 4,000 allowlisted Ethereum addresses was implemented. Fragmints was able to organically grow a large community of over 100,000 Discord members and 100,000 Twitter followers.
                                     </p>
-                                    <p class="techsUsed">Technologies: HTML, CSS, Javascript, Vue.JS, Bootstrap, Firebase/Firestore, Surge
+                                    <!-- <p class="techsUsed">Technologies: HTML, CSS, Javascript, Vue.JS, Bootstrap, Firebase/Firestore, Surge -->
                                     </p>
                                 </div>
                             </div>
                             <div class="row mt-4">
                                 <div class="col-md-12">
-                                    <h4>Experience Gained:</h4>
+                                    <h4>Accomplishments</h4>
                                     <p>
-                                        <span>Studied and implemented a new front-end library from scratch to create a fully working web application.</span>
-                                        <span>Overcame challenges by executing thorough debugging while reinforcing knowledge in CRUD operations.</span>
-                                        <span>Increased skill in interpreting and incorporating documentation for new development technologies.</span>
+                                        <span>Generated over $1,700,000 dollars in revenue.</span>
+                                        <span>Raised and donated over $6,000 to St. Jude’s Children’s Research Hospital.</span>
                                     </p>
                                 </div>
                             </div>
                             <div class="row mt-2">
                                 <div class="col-md-6">
                                     <a type="button" class="btn btn-outline-dark mx-auto btn-block btn-sm"
-                                        href="http://difficult-attraction.surge.sh/" target="_blank"><i
-                                            class="fa fa-globe" aria-hidden="true"></i> Live Site
+                                        href="https://etherealartnft.com/" target="_blank"> Live Site
                                     </a>
                                 </div>
                                 <div class="col-md-6">
                                     <a type="button" class="btn btn-outline-dark mx-auto btn-block btn-sm"
-                                        href="https://github.com/925work/alexs-epic-todo" target="_blank"><i
-                                            class="fa fa-github" aria-hidden="true"></i> View Code
+                                        href="https://opensea.io/collection/etherealartorigins" target="_blank"></i> View on Opensea
                                     </a>
                                 </div>
                             </div>
@@ -198,39 +218,37 @@
                         <div class="card-body text-decoration-none text-secondary">
                             <div class="row">
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 text-center">
-                                    <img src="images/quickupsviews.png" width="316" height="180"
+                                    <img src="images/quartermachine.png" width="316" height="180"
                                         class="mr-2 mb-1 mx-auto project-images">
                                 </div>
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-8 card-text">
-                                    <h5 class="projecttitle">Quickups</h5>
+                                    <h5 class="projecttitle">Quarter Machine NFT</h5>
                                     <hr /> 
-                                    <p class="card-text project-text">Team lead of project made to showcase the use of a full MERN stack. Users can sign up using any email or using the gmail account saved onto their web browser. Quickups is a peer to peer Uber-like service, but for those with pickup trucks who are able to assist others with large item pickups and drop offs. Uses React and Bootstrap for front-end, Sequelize and Auth0 for backend/user authentication, and Heroku for deployment.
+                                    <p class="card-text project-text">The only developer for a unique project created with Spacestation Gaming and Youtuber Shonduras. Quarter Machine uses randomly generated 3D assets for the creation of NFTs. Each week, a new 3D animated short film would be released on Youtube. If a holder’s NFT was featured in the specific episode, they would get paid out the Youtube royalties associated with that video for owning that NFT.
                                     </p>
-                                    <p class="techsUsed">Technologies used: HTML, CSS, Heroku, JavaScript, Bootstrap, React, Seqeulize, Auth0
-                                    </p>
+                                    <!-- <p class="techsUsed">Technologies used: HTML, CSS, Heroku, JavaScript, Bootstrap, React, Seqeulize, Auth0
+                                    </p> -->
                                 </div>
                             </div>
                             <div class="row mt-4">
                                 <div class="col-md-12">
-                                    <h4>Experience Gained:</h4>
+                                    <h4>Accomplishments</h4>
                                     <p>
-                                        <span>Experienced how to code as a team utilizing separate Github branches to delegate work to others.</span>
-                                        <span>Researched Auth0 usage for user authentication to use Gmail’s APIs to login and sign up.</span>
-                                        <span>Built and deployed a full stack project to Heroku pages to create an accessible, functional web app.</span>
+                                        <span>Generated over $1,300,000 dollars in revenue.</span>
+                                        <span>Renowned social media influencer Gary Vee bought 5+ Quarter Machine NFTs.</span>
+                                        <span>Animation video reached millions of views on Youtube, resulting in great rewards for holders.</span>
                                     </p>
                                 </div>
                             </div>
                             <div class="row mt-2">
                                 <div class="col-md-6">
                                     <a type="button" class="btn btn-outline-dark mx-auto btn-block btn-sm"
-                                        href="https://quickups2.herokuapp.com/" target="_blank"><i
-                                            class="fa fa-globe" aria-hidden="true"></i> Live Site
+                                        href="https://quartermachine.io/" target="_blank"> Live Site
                                     </a>
                                 </div>
                                 <div class="col-md-6">
                                     <a type="button" class="btn btn-outline-dark mx-auto btn-block btn-sm"
-                                        href="https://github.com/925work/quickupsv2" target="_blank"><i
-                                            class="fa fa-github" aria-hidden="true"></i> View Code
+                                        href="https://opensea.io/collection/pirateisland" target="_blank"> View on Opensea
                                     </a>
                                 </div>
                             </div>
@@ -242,39 +260,38 @@
                         <div class="card-body text-decoration-none text-secondary">
                             <div class="row">
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 text-center">
-                                    <img src="images/haireleganceviews.png" width="316" height="180"
+                                    <img src="images/mv.png" width="316" height="180"
                                         class="mr-2 mb-1 mx-auto project-images">
                                 </div>
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-8 card-text">
-                                    <h5 class="projecttitle">Hair Elegance</h5> 
+                                    <h5 class="projecttitle">MetaVoicers NFT</h5> 
                                     <hr /> 
-                                    <p class="card-text project-text">A commissioned project for a local business. The client was extremely satisfied with the outcome of the site. They had paid previously for a company website and were extremely displeased with their previous developer. Due to the use of SEO and SEM, the company site experienced increased traffic. Maintains regular contact with said client for any updates needed to their domain.
+                                    <p class="card-text project-text">A charity driven project created with an extremely small team. Consisted of hand drawn protestor NFTs on the Ethereum blockchain. This project used Javascript to scramble PNG images files provided by an artist to generate 3,000 unique pieces of art to be stored on IPFS. The team was able to create a positive community of people from all over the world to raise money for a great cause.
                                     </p>
-                                    <p class="techsUsed">Technologies used: HTML, CSS, Javascript, JQuery, Bootstrap, Filezilla
-                                    </p>
+                                    <!-- <p class="techsUsed">Technologies used: HTML, CSS, Javascript, JQuery, Bootstrap, Filezilla
+                                    </p> -->
                                 </div>
                             </div>
                             <div class="row mt-4">
                                 <div class="col-md-12">
-                                    <h4>Experience Gained:</h4>
+                                    <h4>Accomplishments</h4>
                                     <p>
-                                        <span>Collaborated with client to design a website to meet the needs of their preferences.</span>
-                                        <span>Learned the importance of search engine optimization to apply to the project resulting in increased traffic.</span>
-                                        <span>Hosted a live website using a paid domain using Filezilla as FTP (File Transfer Protocol).</span>
+                                        <span>Learned the fundamentals of building a community, creating a smart contract, and executing the public
+                                            sale of an NFT collection.</span>
+                                        <span>Raised and donated over $5,000 to UNICEF. These funds were used to help struggling families in
+                                            Afghanistan.</span>
                                     </p>
                                 </div>
                             </div>
                             <div class="row mt-2">
                                 <div class="col-md-6">
                                     <a type="button" class="btn btn-outline-dark mx-auto btn-block btn-sm"
-                                        href="https://925work.github.io/hair-elegance/" target="_blank"><i
-                                            class="fa fa-globe" aria-hidden="true"></i> Live Site
+                                        href="https://metavoicers.io/" target="_blank"> Live Site
                                     </a>
                                 </div>
                                 <div class="col-md-6">
                                     <a type="button" class="btn btn-outline-dark mx-auto btn-block btn-sm"
-                                        href="https://github.com/925work/hair-elegance" target="_blank"><i
-                                            class="fa fa-github" aria-hidden="true"></i> View Code
+                                        href="https://opensea.io/collection/metavoicers-of-afghan" target="_blank">View on Opensea
                                     </a>
                                 </div>
                             </div>
@@ -296,20 +313,20 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <h6 class="center questions">Have any questions or want to collaborate?</h6>
-                    <form>
+                    <form id="contact-form">
                         <div class="form-group mt-3">
-                            <input type="name" class="form-control" id="exampleInputName1" aria-describedby="emailHelp"
-                                placeholder="Name">
+                            <input type="text" class="form-control" id="exampleInputName1" aria-describedby="emailHelp"
+                                placeholder="Name" name="user_name">
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputemail1" placeholder="Email">
+                            <input type="email" class="form-control" id="exampleInputemail1" placeholder="Email" name="user_email">
                         </div>
                         <div class="form-group">
                             <textarea class="form-control mb-4" id="exampleFormControlTextarea1" rows="8"
-                                placeholder="Your message" style="min-height: 40px;"></textarea>
+                                placeholder="Your message" style="min-height: 40px;" name="message"></textarea>
                         </div>
                         <div class="text-center">
-                            <button type="submit" class="btn btn-outline-light mb-5">Submit</button>
+                            <button type="submit" value="Send" class="btn btn-outline-light mb-5">Submit</button>
                         </div>
                     </form>
                 </div>
@@ -320,7 +337,7 @@
                         class="emailAddress">Alexanderpham626@gmail.com</A></p>
                     <p class="">Phone Number:<br>801-916-4301</p>
                     <p class="">City/State:<br>Salt Lake City, Utah</p>
-                    <a class="resume" href="images/Alexander Pham Resume 2021.pdf" download target="_blank"><p class=""><i class="fa fa-file" aria-hidden="true"></i> My Resume</p></a>
+                    <a class="resume" href="images/Alexander Pham Resume 2022.pdf" download target="_blank"><p class=""><i class="fa fa-file" aria-hidden="true"></i> My Resume</p></a>
                 </div>
             </div>
         </div>
